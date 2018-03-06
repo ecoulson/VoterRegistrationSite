@@ -1,0 +1,154 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway', sans-serif; }
+
+.navbar-container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 50px; }
+  .navbar-container .navbar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #cc021d; }
+    .navbar-container .navbar .navlink {
+      border-bottom: 5px solid #9a0000;
+      font-size: 18px;
+      color: #efefef;
+      text-decoration: none;
+      font-weight: 300;
+      padding: 10px;
+      text-align: center;
+      width: 25%;
+      display: block;
+      transition: background 0.5s ease, color 0.5s ease, font-weight 0.5s ease; }
+      .navbar-container .navbar .navlink:hover {
+        background-color: #e00825;
+        color: white;
+        font-weight: 700; }
+    .navbar-container .navbar .active {
+      border-bottom: 5px solid #1054c2;
+      background-color: #4286f4; }
+      .navbar-container .navbar .active:hover {
+        background-color: #2a63bf;
+        color: black; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  top: 0;
+  background-image: url("https://www.nationalparks.org/sites/default/files/styles/wide_2x/public/shutterstock_97706066_1.jpg?itok=SamZnSWH&timestamp=1472226962");
+  background-size: cover;
+  z-index: 0;
+  border-bottom: 15px solid #cc021d; }
+  .header .side-skew {
+    position: absolute;
+    top: 0;
+    left: 29%;
+    width: 40px;
+    background-color: #cc021d;
+    height: 100vh;
+    transform: skewX(5deg);
+    z-index: 2; }
+  .header .darker {
+    left: 31.5%;
+    background-color: #b30004;
+    z-index: 1; }
+  .header .side-container {
+    z-index: 0;
+    width: 32%;
+    min-width: 250px;
+    background-color: #e51b36;
+    height: 100%;
+    position: relative;
+    margin-top: -55px;
+    padding-top: 55px; }
+    .header .side-container .lifter {
+      padding-top: 55px;
+      margin-top: -55px;
+      height: 100%;
+      width: 75%; }
+      .header .side-container .lifter .header-title {
+        padding-top: 50px;
+        color: whitesmoke;
+        text-align: center;
+        margin: 75px 5px;
+        line-height: 1.5; }
+      .header .side-container .lifter .header-subtitle-link {
+        color: whitesmoke;
+        text-align: center;
+        transition: color 0.5s ease;
+        text-decoration: underline; }
+        .header .side-container .lifter .header-subtitle-link:hover {
+          color: #5b9fff; }
+  @media screen and (max-width: 1000px) {
+    .header .side-skew {
+      display: none; }
+    .header .side-container {
+      border-right: 50px solid #b30004; }
+      .header .side-container .lifter {
+        width: 100%;
+        border-right: 30px solid #cc021d; } }
+
+.voting-info {
+  margin-top: 100vh;
+  display: block;
+  position: relative;
+  height: 400px;
+  padding-top: 50px; }
+  .voting-info .voting-header {
+    text-align: center; }
+    .voting-info .voting-header .hash {
+      font-size: 40px; }
+  .voting-info .row {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #4286f4; }
+    .voting-info .row .col {
+      text-align: center;
+      line-height: 1.5;
+      padding: 5px 10px;
+      width: 33%;
+      font-size: 18px; }
+    @media screen and (max-width: 680px) {
+      .voting-info .row {
+        flex-wrap: wrap; }
+        .voting-info .row .col {
+          margin-top: 15px;
+          width: 100%; } }
+  .voting-info p {
+    padding: 15px 35px;
+    line-height: 1.5;
+    font-size: 18px; }
+  .voting-info .vote-link {
+    background-color: #4286f4;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: color 0.5s ease;
+    padding: 1px 0; }
+    .voting-info .vote-link:hover {
+      color: #e51b36; }
+    .voting-info .vote-link h2 {
+      font-size: 20px; }
+  .voting-info .valid-states {
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: color 0.5s ease;
+    background-color: #cc021d;
+    padding: 1px 0; }
+    .voting-info .valid-states:hover {
+      color: #5b9fff; }
+    .voting-info .valid-states h2 {
+      font-size: 20px; }
+
+/*# sourceMappingURL=main.css.map */
